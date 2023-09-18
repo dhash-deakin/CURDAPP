@@ -7,43 +7,46 @@
       <form action="/add" method="post" id="add-form" enctype="multipart/form-data">
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="inputEmail4">Name</label>
+            <label for="inputName">Name</label>
             <input
-              type="name"
+              type="text"
               name="name"
               class="form-control"
-              id="inputname"
+              id="inputName"
               placeholder="Enter Full Name"
               required
+              autocomplete="name" 
             />
           </div>
           <div class="form-group col-md-6">
-            <label for="email">Email</label>
+            <label for="inputEmail">Email</label>
             <input
               type="email"
               class="form-control"
-              id="inputname"
+              id="inputEmail"
               name="email"
               placeholder="Enter Email"
               required
+              autocomplete="email" 
             />
           </div>
         </div>
         <div class="form-group">
-          <label for="inputAddress">Phone</label>
+          <label for="inputPhone">Phone</label>
           <input
             type="tel"
             class="form-control"
-            id="inputAddress"
+            id="inputPhone"
             name="phone"
             placeholder="+61 123345 234"
             required
+            autocomplete="tel" 
           />
         </div>     
         
-        <div class="form-group ">
-          <label for="image">Select Image</label>
-          <input type="file" class="form-control" name="image" id="inputimage" />
+        <div class="form-group">
+          <label for="inputImage">Select Image</label>
+          <input type="file" class="form-control" name="image" id="inputImage" />
         </div>
         <input type="submit" name="submit" value="Add User" class="btn btn-primary">
       </form>
